@@ -1,0 +1,34 @@
+.prallax {
+  padding: 70px 0;
+  background-image: url("./assets/for_pralax.jpg");
+  background-size: cover;
+
+}
+
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  .arrow-slider {
+    position: absolute;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    .transition;
+    &:hover {
+      top: 45%;
+      .scale;
+    }
+  }
+  .prev {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .next {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}
