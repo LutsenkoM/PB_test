@@ -1,6 +1,5 @@
 .main-header {
   background: @primary;
-  padding: 20px 0;
 }
 
 .main-logo {
@@ -14,15 +13,31 @@
   ul {
     li {
       display: inline-block;
-      opacity: 0.69;
-      color: @white;
+      color: @gray-text;
       font-family: @main-font-semibild;
       font-size: 14px;
       font-weight: 400;
-      margin-right: 45px;
+      .transition;
       &:last-child {
         margin-right: 0;
       }
+      a {
+        display: block;
+        padding: 20px 20px;
+        &:hover {
+          background-color: @secondary;
+          color: @white;
+        }
+      }
+    }
+  }
+}
+
+.submenu-isset {
+  .transition;
+  &:hover {
+    .sub-menu-hidden {
+      display: block;
     }
   }
 }
