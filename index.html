@@ -8,30 +8,37 @@
 <body>
 <header class="main-header">
     <div class="container overflow-h">
-        <div class="main-logo float-l">
+        <div class="main-logo">
             <img src="./dist/assets/logo.svg" about="pithcbook-logo">
+            <h1>PitchBook</h1>
+        </div>
+        <div class="burger" id="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
         <nav class="main-nav float-r">
             <ul>
-                <li class="submenu-isset"><a href="#">Features</a>
+                <li class="submenu-isset">
+                    <a href="#">Features</a>
                     <div class="sub-menu-hidden">
                         <div class="container-menu overflow-h">
-                            <ul class="width-1-2 float-l overflow-h">
+                            <ul class="top-links width-1-2 float-l overflow-h">
                                 <li class="width-1-4 float-l">
                                     <a href="#">About us</a>
-                                    <img src="./dist/assets/menu_image.png">
+                                    <img src="./dist/assets/menu_image.png" alt="about-us">
                                 </li>
                                 <li class="width-1-4 float-l">
                                     <a href="#">Our partners</a>
-                                    <img src="./dist/assets/menu_image.png">
+                                    <img src="./dist/assets/menu_image.png" alt="out-partners">
                                 </li>
                                 <li class="width-1-4 float-l">
                                     <a href="#">Careers</a>
-                                    <img src="./dist/assets/menu_image.png">
+                                    <img src="./dist/assets/menu_image.png" alt="careers">
                                 </li>
                                 <li class="width-1-4 float-l">
                                     <a href="#">Coutact us</a>
-                                    <img src="./dist/assets/menu_image.png">
+                                    <img src="./dist/assets/menu_image.png" alt="contact-us">
                                 </li>
                             </ul>
                             <div class="width-1-2 float-l">
@@ -59,7 +66,37 @@
                 </li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Pricing</a></li>
-                <li><a href="#">Reviews</a></li>
+                <li class="submenu-isset"><a href="#">Reviews</a>
+                    <div class="sub-menu-hidden">
+                        <div class="container-menu overflow-h">
+                            <ul class="width-1-2 float-l overflow-h">
+                                <li class="width-1-4 float-l">
+                                    <a href="#">Our partners</a>
+                                    <img src="./dist/assets/menu_image.png" alt="partners">
+                                </li>
+                                <li class="width-1-4 float-l">
+                                    <a href="#">Careers</a>
+                                    <img src="./dist/assets/menu_image.png" alt="Careers">
+                                </li>
+                            </ul>
+                            <div class="width-1-2 float-l">
+                                <ul class="sub-menu">
+                                    <li><a href="#">Product</a></li>
+                                    <li><a href="#">API and Datafeed</a></li>
+                                    <li><a href="#">Platform</a></li>
+                                    <li><a href="#">Mobile</a></li>
+                                    <li><a href="#">News & Analysis</a></li>
+                                    <li><a href="#">Reports</a></li>
+                                    <li><a href="#">Videos</a></li>
+                                    <li><a href="#">Subscribe to N&A</a></li>
+                                    <li><a href="#">News & Analysis</a></li>
+                                    <li><a href="#">Reports</a></li>
+                                    <li><a href="#">Videos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -76,15 +113,15 @@
             </p>
             <a href="#" class="transparent-btn">Download</a>
         </div>
-        <div class="form-block float-r width-1-2">
+        <div class="form-block float-l width-1-2">
             <form action="#" class="float-r">
                 <div class="form-header">
                     <h3>Try Your <span class="accent-text">FREE</span> Trial Today</h3>
                 </div>
                 <div class="fields-wrap">
-                    <input type="text" placeholder="Name" class="form-input">
-                    <input type="email" placeholder="Email" class="form-input">
-                    <input type="password" placeholder="Password" class="form-input">
+                    <input type="text" name="name" placeholder="Name" class="form-input">
+                    <input type="email" name="email" placeholder="Email" class="form-input">
+                    <input type="password" name="password" placeholder="Password" class="form-input">
                 </div>
                 <button type="submit" class="primary-btn">Get Started</button>
             </form>
@@ -93,7 +130,7 @@
 </section>
 <section class="social-media">
     <div class="container overflow-h">
-        <div class="float-l">
+        <div class="text float-l">
             <h2>Social Media</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
@@ -161,7 +198,7 @@
 </section>
 <section class="sublist">
     <div class="container overflow-h">
-        <div class="width-1-2 float-l">
+        <div class="img-wrap width-1-2 float-l">
             <img class="shadow-img" src="./dist/assets/image_left_sub_list_u260_copy.svg" alt="sublist-img">
         </div>
         <div class="list-wrap width-1-2 float-r">
@@ -204,8 +241,8 @@
                 bibendum laoreet.
             </p>
         </div>
-        <div class="width-1-2 float-r text-align-r padding-b-40">
-            <img class="shadow-img " src="./dist/assets/404-image.svg">
+        <div class="img-wrap width-1-2 float-r text-align-r padding-b-40">
+            <img class="shadow-img " src="./dist/assets/404-image.svg" alt="#">
         </div>
     </div>
 </section>
@@ -485,7 +522,7 @@
                 <div class="width-1-2 float-l overflow-h">
                     <input type="text" name="name" size="500" placeholder="Name" class="form-input">
                     <input type="email" name="email" size="500" placeholder="Email" class="form-input">
-                    <input type="password" name="subject" size="500" placeholder="Subject" class="form-input">
+                    <input type="text" name="subject" size="500" placeholder="Subject" class="form-input">
                 </div>
                 <div class="width-1-2 float-l">
                     <textarea name="message" class="form-input overflow-h" rows="9" placeholder="Message"></textarea>

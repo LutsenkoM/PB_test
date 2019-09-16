@@ -62,6 +62,11 @@
     .text-orange {
       line-height: 40px;
       text-transform: uppercase;
+      cursor: default;
+      &:hover {
+        background: @secondary;
+        color: @white;
+      }
     }
   }
   .list {
@@ -77,6 +82,21 @@
       &:last-child {
         border: none;
       }
+    }
+  }
+}
+
+// Media
+@media (max-width: 991px) {
+  .pricing-wrap {
+    .profi-wrap {
+      height: auto;
+      .profi {
+        position: static ;
+      }
+    }
+    li {
+      margin-bottom: 30px;
     }
   }
 }

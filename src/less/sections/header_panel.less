@@ -28,7 +28,7 @@
     form {
       width: 374px;
       background-color: @white;
-      border-radius: 15px;
+      border-radius: 5px;
     }
     .fields-wrap {
       padding: 30px 35px 45px 35px;
@@ -47,6 +47,7 @@
       }
     }
     input {
+      width: 284px;
       &:last-child {
         margin-bottom: 0;
       }
@@ -57,6 +58,22 @@
       padding: 15px 0;
       border-bottom-right-radius: 5px;
       border-bottom-left-radius: 5px;
+    }
+  }
+}
+
+// Media
+@media (max-width: 991px) {
+  .header-panel .container {
+    .text-block {
+      text-align: center;
+      margin-bottom: 50px;
+      .text {
+        margin: 0 auto 30px auto;
+      }
+    }
+    form {
+      margin: 0 auto;
     }
   }
 }
