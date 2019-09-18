@@ -1,84 +1,96 @@
 .sub-menu-hidden {
-  display: none;
-  padding: 10px 0 50px 0;
-  background: #ffffff;
-  position: absolute;
-  top: 69px;
-  left: 0;
-  right: 0;
-  width: 100%;
-  ul {
-    li {
-      &:hover {
-        background: none;
-        //color: @secondary;
-      }
-      a {
-        padding: 0;
-        color: @gray-text;
-        &:hover {
-          background: none;
-          color: @secondary;
-        }
-      }
-    }
-  }
-  .sub-menu {
-    column-count: 4;
-    li {
-      display: block;
-      font-size: 12px;
-      margin: 0;
-      &:hover {
-        color: @gray-text;
-        background: none;
-      }
-      a {
-        padding: 0;
-        background: none;
-        .transition;
-        &:hover {
-          background: none;
-          color: @secondary;
-        }
-      }
-    }
-  }
+	display: none;
+	padding: 10px 0 50px 0;
+	background: #ffffff;
+	position: absolute;
+	top: 69px;
+	left: 0;
+	right: 0;
+	width: 100%;
+
+	ul {
+		li {
+			&:hover {
+				background: none;
+				//color: @secondary;
+			}
+
+			a {
+				padding: 0;
+				color: @gray-text;
+
+				&:hover {
+					background: none;
+					color: @secondary;
+				}
+			}
+		}
+	}
+
+	.sub-menu {
+		column-count: 4;
+
+		li {
+			display: block;
+			font-size: 12px;
+			margin: 0;
+
+			&:hover {
+				color: @gray-text;
+				background: none;
+			}
+
+			a {
+				padding: 0;
+				background: none;
+				.transition;
+
+				&:hover {
+					background: none;
+					color: @secondary;
+				}
+			}
+		}
+	}
 }
 
 // Media
-
 @media (max-width: 991px) {
-  .sub-menu-hidden {
-    position: static;
-  }
+	.sub-menu-hidden {
+		position: static;
+	}
 
-  .sub-menu-hidden {
-    padding: 0;
-    ul {
-      li {
-        &:hover {
-          background: none;
-        }
-        a {
-          font-size: 14px;
-        }
-      }
-    }
-    .top-links {
-      overflow: hidden;
-      li {
-        width: 50%;
-        float: left;
-      }
-    }
-    .sub-menu {
-      column-count: 1;
-      border-bottom: 1px solid @secondary;
-      margin-bottom: 10px;
-      padding-bottom: 10px;
-    }
-  }
+	.sub-menu-hidden {
+		padding: 0;
+
+		ul {
+			li {
+				&:hover {
+					background: none;
+				}
+
+				a {
+					font-size: 14px;
+				}
+			}
+		}
+
+		.top-links {
+			overflow: hidden;
+
+			li {
+				width: 50%;
+				float: left;
+			}
+		}
+
+		.sub-menu {
+			column-count: 1;
+			border-bottom: 1px solid @secondary;
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+		}
+	}
 
 }
 

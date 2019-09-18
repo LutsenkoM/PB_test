@@ -1,102 +1,118 @@
 .pricing {
-  background-color: @accent-gray;
-  padding: 100px 0;
+	background-color: @accent-gray;
+	padding: 100px 0;
 }
 
 .pricing-wrap {
-  padding-top: 35px;
-  .profi-wrap {
-    height: 511px;
-    position: relative;
-    .profi {
-      position: absolute;
-      width: 100%;
-      top: -35px;
-      left: 12px;
-    }
-  }
+	padding-top: 35px;
+
+	.profi-wrap {
+		height: 511px;
+		position: relative;
+
+		.profi {
+			position: absolute;
+			width: 100%;
+			top: -35px;
+			left: 12px;
+		}
+	}
 }
 
 .price-card {
-  max-width: 343px;
-  margin: 0 auto;
-  .main {
-    background-color: @primary;
-    .package {
-      border-bottom: 2px solid @gray-text;
-      line-height: 60px;
-      color: @white;
-      font-family: @main-font;
-      font-size: 20px;
-      font-weight: 700;
-    }
-    .price {
-      color: @white;
-      font-family: @secondary-font;
-      font-size: 94px;
-      font-weight: 700;
-      padding: 20px 0 0 0;
-      line-height: 70px;
-      vertical-align: bottom;
-      border-bottom: 2px solid @gray-text;
-      .small-font {
-        font-size: 35px;
-      }
-      .large-font {
-        font-size: 94px;
-      }
-    }
-    .add-info {
-      opacity: 0.5;
-      color: @white;
-      font-family: @main-font-semibild;
-      font-size: 14px;
-      font-weight: 400;
-      font-style: italic;
-      line-height: 51px;
-    }
-    .orange-line {
-      background-color: @secondary;
-      height: 5px;
-    }
-    .text-orange {
-      line-height: 40px;
-      text-transform: uppercase;
-      cursor: default;
-      &:hover {
-        background: @secondary;
-        color: @white;
-      }
-    }
-  }
-  .list {
-    background-color: @white;
-    li {
-      color: @gray-text;
-      font-family: @main-font;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 40px;
-      text-transform: uppercase;
-      border-bottom: 1px solid @accent-gray;
-      &:last-child {
-        border: none;
-      }
-    }
-  }
+	max-width: 343px;
+	margin: 0 auto;
+
+	.main {
+		background-color: @primary;
+
+		.package {
+			border-bottom: 2px solid @gray-text;
+			line-height: 60px;
+			color: @white;
+			font-family: @main-font;
+			font-size: 20px;
+			font-weight: 700;
+		}
+
+		.price {
+			color: @white;
+			font-family: @secondary-font;
+			font-size: 94px;
+			font-weight: 700;
+			padding: 20px 0 0 0;
+			line-height: 70px;
+			vertical-align: bottom;
+			border-bottom: 2px solid @gray-text;
+
+			.small-font {
+				font-size: 35px;
+			}
+
+			.large-font {
+				font-size: 94px;
+			}
+		}
+
+		.add-info {
+			opacity: 0.5;
+			color: @white;
+			font-family: @main-font-semibild;
+			font-size: 14px;
+			font-weight: 400;
+			font-style: italic;
+			line-height: 51px;
+		}
+
+		.orange-line {
+			background-color: @secondary;
+			height: 5px;
+		}
+
+		.text-orange {
+			line-height: 40px;
+			text-transform: uppercase;
+			cursor: default;
+
+			&:hover {
+				background: @secondary;
+				color: @white;
+			}
+		}
+	}
+
+	.list {
+		background-color: @white;
+
+		li {
+			color: @gray-text;
+			font-family: @main-font;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 40px;
+			text-transform: uppercase;
+			border-bottom: 1px solid @accent-gray;
+
+			&:last-child {
+				border: none;
+			}
+		}
+	}
 }
 
 // Media
 @media (max-width: 991px) {
-  .pricing-wrap {
-    .profi-wrap {
-      height: auto;
-      .profi {
-        position: static ;
-      }
-    }
-    li {
-      margin-bottom: 30px;
-    }
-  }
+	.pricing-wrap {
+		.profi-wrap {
+			height: auto;
+
+			.profi {
+				position: static;
+			}
+		}
+
+		li {
+			margin-bottom: 30px;
+		}
+	}
 }
