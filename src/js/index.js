@@ -1,6 +1,7 @@
 $(document).ready(function () {
+
   // Mobile menu
-  var menuOpen = false,
+  let menuOpen = false,
     mainNav = $('.main-nav');
   $('#menu-btn').on('click', function () {
     if (menuOpen) {
@@ -19,36 +20,36 @@ $(document).ready(function () {
 
   // Tabs
   $('.tabs-nav li').on('click', function () {
-    var current = $(this).index();
+    let current = $(this).index();
     $(this).addClass('active').siblings().removeClass('active');
     $('.tabs-content .item').eq(current).addClass('display').siblings().removeClass('display');
   });
 
   //Prallax
-  var window = $(window);
+  let win = $(window);
 
-  window.on('scroll', function () {
-    var pralaxedEl = $('.prallax'),
+  win.on('scroll', function () {
+    let pralaxedEl = $('.prallax'),
       heightTop = pralaxedEl.offset().top,
-      windowHeight = $(window).height(),
+      windowHeight = win.height(),
       windowScrool = $(this).scrollTop();
     if ((heightTop - windowHeight) < windowScrool) {
-      var scrolled = $(window).scrollTop();
+      let scrolled = win.scrollTop();
       pralaxedEl.css('background-position-y', -(scrolled * 0.2) + 'px');
     }
   });
 
 //Slider
-  var item = $('.testimonial-slider li'),
+  let item = $('.testimonial-slider li'),
     itemsCount = item.length,
     slider = $('.slider'),
     itemsWidth;
 
-  if (window.width() > 991) {
+  if (win.width() > 991) {
     itemsWidth = slider.width() / 3;
-  } else if (window.width() < 991) {
+  } else if (win.width() < 991) {
     itemsWidth = slider.width() / 2;
-  } else if (window.width() < 768) {
+  } else if (win.width() < 768) {
     itemsWidth = slider.width()
   }
 
@@ -56,16 +57,16 @@ $(document).ready(function () {
 
   $('.testimonial-slider').css('width', itemsCount * itemsWidth + 'px');
 
-  var sliderItem = $('.testimonial-slider li');
+  let sliderItem = $('.testimonial-slider li');
 
   $('#prev').on('click', function () {
-    var last = sliderItem.last().css({opacity: '0', width: '0px'});
+    let last = sliderItem.last().css({opacity: '0', width: '0px'});
     last.prependTo('.testimonial-slider');
     last.animate({opacity: '1', width: itemsWidth + 'px'});
   });
 
   $('#next').on('click', function () {
-    var first = sliderItem.first();
+    let first = sliderItem.first();
     first.animate({opacity: '0', width: '0px'}, function () {
       first.appendTo('.testimonial-slider').css({opacity: '1', width: itemsWidth + 'px'});
     });
@@ -73,7 +74,7 @@ $(document).ready(function () {
 
   // Submit form
   $(".form").on('submit', function (event) {
-    console.log('Form data', $(this).serializeArray());
+    console.log($(this).serializeArray());
     event.preventDefault();
   });
 
