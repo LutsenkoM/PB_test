@@ -8,14 +8,14 @@
 	right: 0;
 	width: 100%;
 
-	ul {
-		li {
+	.top-links, .sub-menu  {
+		.top-link-wrap, .sub-menu-item {
 			&:hover {
 				background: none;
-				//color: @secondary;
+				color: @secondary;
 			}
 
-			a {
+			.top-link, .sub-menu-link  {
 				padding: 0;
 				color: @gray-text;
 
@@ -30,7 +30,7 @@
 	.sub-menu {
 		column-count: 4;
 
-		li {
+		.sub-menu-item {
 			display: block;
 			font-size: 12px;
 			margin: 0;
@@ -40,7 +40,7 @@
 				background: none;
 			}
 
-			a {
+			.sub-menu-link {
 				padding: 0;
 				background: none;
 				.transition;
@@ -63,13 +63,13 @@
 	.sub-menu-hidden {
 		padding: 0;
 
-		ul {
-			li {
+		.top-links, .sub-menu  {
+			.top-link-wrap, .sub-menu-item {
 				&:hover {
 					background: none;
 				}
 
-				a {
+				.top-link, .sub-menu-link {
 					font-size: 14px;
 				}
 			}
@@ -78,9 +78,8 @@
 		.top-links {
 			overflow: hidden;
 
-			li {
+			.top-link {
 				width: 50%;
-				float: left;
 			}
 		}
 
